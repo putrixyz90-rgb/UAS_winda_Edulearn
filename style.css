@@ -1,0 +1,220 @@
+/* ==========================
+   STYLE CSS EDULEARN
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f8f9fa;
+    color:#333;
+    line-height:1.6;
+}
+
+/* ==========================
+   NAVBAR
+========================== */
+
+.navbar{
+    transition:.3s;
+}
+
+.navbar-brand{
+    font-size:28px;
+    font-weight:bold;
+}
+
+.nav-link{
+    font-size:17px;
+    margin-left:10px;
+}
+
+.nav-link:hover{
+    color:#ffd43b !important;
+}
+
+/* ==========================
+   HERO
+========================== */
+
+.hero{
+    padding-top:130px;
+    padding-bottom:90px;
+    background:linear-gradient(135deg,#0d6efd,#4dabf7);
+    color:white;
+}
+
+.hero h1{
+    font-size:50px;
+    font-weight:700;
+}
+
+.hero p{
+    font-size:20px;
+    margin-top:20px;
+    margin-bottom:25px;
+}
+
+.hero img{
+    animation:float 3s ease-in-out infinite;
+}
+
+@keyframes float{
+
+0%{
+transform:translateY(0);
+}
+
+50%{
+transform:translateY(-15px);
+}
+
+100%{
+transform:translateY(0);
+}
+
+}
+
+/* ==========================
+   BUTTON
+========================== */
+
+.btn{
+    border-radius:30px;
+    padding:12px 28px;
+    font-weight:600;
+}
+
+/* ==========================
+   STATISTIK
+========================== */
+
+.stats h2{
+    font-size:45px;
+    font-weight:bold;
+}
+
+.stats p{
+    font-size:18px;
+}
+
+/* ==========================
+   CARD
+========================== */
+
+.card{
+    border:none;
+    border-radius:18px;
+    transition:.3s;
+    overflow:hidden;
+}
+
+.card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 15px 35px rgba(0,0,0,.15);
+
+}
+
+.card img{
+    height:220px;
+    object-fit:cover;
+}
+
+.card-body{
+    padding:25px;
+}
+
+/* ==========================
+   SECTION
+========================== */
+
+section{
+    padding-top:80px;
+    padding-bottom:80px;
+}
+
+section h2{
+    font-size:38px;
+    font-weight:bold;
+    margin-bottom:40px;
+}
+
+/* ==========================
+   FORM
+========================== */
+
+.form-control{
+    border-radius:12px;
+    padding:14px;
+}
+
+textarea{
+    resize:none;
+}
+
+/* ==========================
+   FOOTER
+========================== */
+
+footer{
+    background:#0d6efd;
+}
+
+footer h4{
+    font-weight:bold;
+}
+
+footer p{
+    margin:8px 0;
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:992px){
+
+.hero{
+text-align:center;
+}
+
+.hero h1{
+font-size:38px;
+}
+
+.hero img{
+margin-top:35px;
+width:90%;
+}
+
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:30px;
+}
+
+section h2{
+font-size:28px;
+}
+
+.navbar-brand{
+font-size:22px;
+}
+
+.card img{
+height:180px;
+}
+
+.btn{
+padding:10px 22px;
+}
+
+}
